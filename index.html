@@ -949,9 +949,43 @@
         grid-template-columns: 1.2fr 1fr 1fr
       }
 
-      .mobile-sticky {
-        display: none
-      }
+      .mobile-sticky{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    .mobile-sticky{
+        display:flex;
+        position:fixed;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:99999;
+
+        justify-content:center;
+        align-items:center;
+
+        padding:12px;
+
+        background:rgba(8,24,43,.95);
+        backdrop-filter:blur(18px);
+        -webkit-backdrop-filter:blur(18px);
+
+        box-shadow:0 -8px 30px rgba(0,0,0,.35);
+    }
+
+    .mobile-sticky .btn{
+        width:100%;
+        max-width:500px;
+        margin:0;
+    }
+
+    body{
+        padding-bottom:90px;
+    }
+
+}
 
       .footer {
         padding-bottom: 42px
