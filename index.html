@@ -1084,6 +1084,66 @@ header{
 }
 
 }
+/* =========================================
+   MOBILE HEADER ONLY
+   (Desktop remains unchanged)
+========================================= */
+@media only screen and (max-width:768px){
+
+/* Navbar */
+.nav{
+    min-height:64px !important;
+    padding:0 !important;
+}
+
+/* Navbar container */
+.nav-inner{
+    height:64px !important;
+    min-height:64px !important;
+    padding:0 16px !important;
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+/* Logo + Brand */
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    height:64px;
+    margin:0;
+}
+
+/* Logo */
+.brand-logo{
+    width:42px !important;
+    height:42px !important;
+    object-fit:contain;
+    flex-shrink:0;
+}
+
+/* Brand Name */
+.brand span{
+    font-size:18px !important;
+    font-weight:800;
+    color:#0b1f3a;
+    line-height:1.1;
+    white-space:nowrap;
+}
+
+/* Hide desktop menu */
+.nav-links{
+    display:none !important;
+}
+
+/* Hide desktop button */
+.nav-cta{
+    display:none !important;
+}
+
+}
 
 </style>
 </head>
