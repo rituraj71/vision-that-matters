@@ -375,14 +375,20 @@
       backdrop-filter: blur(22px)
     }
 
-    .portrait-visual {
-      min-height: 520px;
-      display: grid;
-      place-items: center;
-      padding: 44px;
-      color: var(--navy);
-      text-align: center
-    }
+    .portrait-visual{
+    width:100%;
+    height:650px;
+    overflow:hidden;
+    border-radius:18px;
+}
+.founder-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top;
+    display:block;
+    border-radius:18px;
+}
 
     .portrait-monogram {
       width: 168px;
@@ -1129,12 +1135,13 @@ header{
           <h2 id="mentor-title" class="fade-up">A leadership mentor shaped by command, consequence, and clarity.</h2>
           <div class="glass-card mentor-card fade-up">
             <div class="portrait-card">
-              <div class="portrait-visual">
-                <div>
-                  <div class="portrait-monogram">JR</div>
-                  <p class="asset-note">Professional image placeholder</p>
-                </div>
-              </div>
+             <div class="portrait-visual">
+  <img
+    src="images/founder.jpg"
+    alt="Brigadier (Prof.) Jeewan Rajpurohit, PhD"
+    class="founder-image"
+  >
+</div>
             </div>
             <div class="mentor-content">
               <h3>Brigadier (Prof.) Jeewan Rajpurohit, PhD</h3>
