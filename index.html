@@ -36,6 +36,35 @@
     {"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Vision That Matters","url":"https://example.com/vision-that-matters","description":"Premium leadership coaching and executive mentoring brand."},{"@type":"Person","name":"Brigadier (Prof.) Jeewan Rajpurohit, PhD","jobTitle":"Indian Army Brigadier, Leadership Coach, Keynote Speaker, Corporate Mentor"},{"@type":"Service","name":"Leadership Breakthrough Session","provider":{"@type":"Organization","name":"Vision That Matters"},"offers":{"@type":"Offer","price":"499","priceCurrency":"INR","url":"https://example.com/razorpay-payment-link"}}]}
   </script>
   <style>
+    /* ===== Footer Copyright ===== */
+
+.footer-divider{
+    border:none;
+    border-top:1px solid rgba(255,255,255,.12);
+    margin:30px 0 20px;
+}
+
+.footer-copyright{
+    text-align:center;
+    color:rgba(255,255,255,.75);
+    font-family:Poppins, sans-serif;
+    font-size:15px;
+    font-weight:500;
+    letter-spacing:.3px;
+}
+
+@media (max-width:768px){
+
+.footer-divider{
+    margin:24px 0 18px;
+}
+
+.footer-copyright{
+    font-size:13px;
+    padding-bottom:8px;
+}
+
+}
     :root {
       --navy: #0b1f3a;
       --navy-2: #123961;
@@ -1284,11 +1313,11 @@ header{
 </div>
 
       </div>
-      <section class="copyright-section">
-    <div class="container">
-        <p>Copyright © 2026 Vision That Matters™</p>
-    </div>
-</section>
+      <hr class="footer-divider">
+
+<div class="footer-copyright">
+    Copyright © 2026 Vision That Matters™
+</div>
     </footer>
     <div class="mobile-sticky"><a class="btn btn-primary js-payment-link"
         href="https://pages.razorpay.com/pl_Q3SlfXSTAwMs2I/view">Book Your Breakthrough Session – ₹499</a></div>
